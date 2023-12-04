@@ -14,6 +14,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(Practica3V1
   main.cpp
+  arena.h arena.cpp
+  pokemon.h pokemon.cpp
+  pokebola.h pokebola.cpp
 )
 target_link_libraries(Practica3V1 Qt${QT_VERSION_MAJOR}::Core)
 
