@@ -26,7 +26,8 @@ private:
       El unico contenido de una pokebola es un pokemon, que estara guardado en esta variable.
     */
     //Pokemon PokemonP; //Aquí se deberá guardar el pokemon que atrapemos
-    Pokemon* pokemon;
+    //Pokemon* pokemon;
+    QString IDPB;
 
 
 
@@ -37,7 +38,7 @@ public:
     /*!
       Este constructor se va a encargar de crear pokebolas vacias, por defecto
     */
-    Pokebola(Pokemon &pok);
+    Pokebola();
 
     //! Un destructor.
     /*!
@@ -59,6 +60,9 @@ public:
     */
     void Liberar();
 
+    void setIDPB();
+
+    void infoPB();
 
 };
 

@@ -56,11 +56,14 @@ qInfo() << pokrand.setRand();*/
 
     Pokebola pokB(pokrand);
 
+    //Pokebola pokB;
+
     int var2;
-    for(var1=0; var2<numPok; var1++){
+    for(var2=0; var2<numPok; var2++){
         qInfo() << "++++++++++++++++++++++++++++++++++++++++";
-        Pokemon &pokrand = *pokemon[var1];
-        Pokebola pokB(pokrand);
+        pokebola[var1] = new Pokebola(); //Creamos un nuevo pokemon que estará en la posición var1 de nuestro vector de pokemones
+        Pokebola *pokB{pokebola[var1]};
+        pokB->infoPB();
     }
 
     return a.exec();

@@ -118,6 +118,7 @@ public:
     int setRand();
 
     friend class Pokebola;
+    friend class Arena;
 
 
 signals:
