@@ -1,11 +1,11 @@
 #ifndef ARENA_H
 #define ARENA_H
 
-#include <QObject>
+#include <QDebug>
 
 class Arena
 {
-    Q_OBJECT
+
 public:
     Arena();
 };
