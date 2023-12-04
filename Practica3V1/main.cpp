@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     cin >> numPok;
 
     Pokemon* pokemon[numPok]; //Declaramos un vector de referencias pokemon de longitud numPok
+    Pokebola* pokebola[numPok]; //Declaramos un vector de pokebolas
 
     //Estacion* canales[3];
     //canales[0] = new Estacion{&radio, 1130, "La Ke-Buena"};
@@ -54,6 +55,13 @@ qInfo() << pokrand.setRand();*/
     Pokemon &pokrand = *pokemon[2];
 
     Pokebola pokB(pokrand);
+
+    int var2;
+    for(var1=0; var2<numPok; var1++){
+        qInfo() << "++++++++++++++++++++++++++++++++++++++++";
+        Pokemon &pokrand = *pokemon[var1];
+        Pokebola pokB(pokrand);
+    }
 
     return a.exec();
 }
