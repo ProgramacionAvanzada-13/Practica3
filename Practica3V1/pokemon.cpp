@@ -74,5 +74,5 @@ void Pokemon::infoPokemon()
     qInfo() << "El nombre del pokemon es : " << Nombre;
     qInfo() << "La vida del pokemon es : " << Vida;
     qInfo() << "El ataque del pokemon es : " << Ataque;
-    qInfo() << "La defensa del pokemon es : " << Defensa;
+    qInfo() << "La defensa del pokemon es : " << Defensa*100 << "%";
 }
